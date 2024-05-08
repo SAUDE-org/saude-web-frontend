@@ -1,8 +1,8 @@
 <template>
     <div class="w-full h-full">   
-        <h1>Login Page</h1>
+        <h1>Home Page</h1>
         <p>
-            <router-link :to="{ name: 'home' }">Home Page</router-link>
+            <NuxtLink to="/Login">Home Page</NuxtLink>
         </p>
     </div>
 </template>
