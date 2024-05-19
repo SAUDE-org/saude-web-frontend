@@ -1,13 +1,18 @@
 <template>
     <div id="home" class="w-full h-full">
         <div id="header" class="w-full h-24">
-            <div id="contato" class="w-full h-12 bg-teal-500 flex flex-row">
-                <div class="">endereço</div>
-                <div>telefone</div>
+            <div id="contato" class="w-full h-12 px-24" style="background-color: #07B4BA;">
+                <div id="endereco" class="grid justify-items-start items-center">
+                    <div>endereço</div>
+                </div>
+
+                <div id="telefone" class="grid justify-items-end">
+                    <div>telefone</div>
+                </div>
             </div>
 
-            <div id="menus" class="w-full h-12 bg-blue-200 flex-items-center justify-btween ">
-                Menus
+            <div id="logo" class="w-full h-12 px-24" style="background-color: #C5EBFE;">
+                Logomarca
             </div>
         </div>
         
@@ -16,9 +21,9 @@
             <p><NuxtLink to="/login" target="_blank">Login Page</NuxtLink></p>
         </div>
 
-        <div id="footer" class="px-24  flex flex-row items-center justify-between">
+        <div id="footer" class="px-24  flex flex-row items-center justify-between" style="background-color: #C5EBFE;">                
             <div id="foo-contato flex flex-items-center">
-                <p class="font-bold" >Contato</p><br>
+                <p class="font-bold">Contato</p><br>
                 <p>Central da Saúde Ltda</p>
                 <p>CNPJ nº 00.000.000/0001-00</p>
                 <p>Resposnsável Técnico: Dr. Pires Silva</p>
@@ -26,16 +31,20 @@
             </div>
 
             <div id="foo-funcionamento">
-                <p>Funcionamento</p>
+                <p class="font-bold">Funcionamento</p><br>
+                <p>Segunda a Sexta</p>
+                <p>07:00 h às 1900 h</p>
             </div>
 
             <div id="foo-localizacao">
-                <p>Localização</p>
+                <p class="font-bold">Localização</p><br>
+                <p>Av. Praia, 40 - Ponta Negra</p>
+                <p>Natal/RN</p>                
             </div>
         </div>
     </div>
 </template>
 
 <script setup>
-
+    
 </script>
