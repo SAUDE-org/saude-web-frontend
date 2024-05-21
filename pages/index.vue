@@ -17,13 +17,12 @@
         </div>
         
         <div id="body" class="px-24 py-8">
-            <div id="agendar" class="w-80 h-44 d-flex flex-column mb-3 align-items-center justify-content-center" style="background-color: #C5EBFE;">
-                <p>Faça o seu agendamento</p>
-                <p>Botão agendar</p>
+            <div id="agendar" class="w-80 h-44 rounded-5 d-flex flex-column mb-3 align-items-center justify-content-center" style="background-color: #C5EBFE;">
+                <p class="text-xl">Faça o seu agendamento</p>                
+                <a href="/login" target="_blank">
+                    <button type="button" class="btn btn-primary btn-lg" style="background-color: #76BFAC; border: 4px solid #CFE3E1; border-radius: 14px;">Agendar</button>
+                </a>
             </div>
-
-            <br>
-            <p><NuxtLink to="/login" target="_blank">Login Page</NuxtLink></p>
         </div>
 
         <div id="footer" class="px-24  flex flex-row items-center justify-between" style="background-color: #C5EBFE;">                
