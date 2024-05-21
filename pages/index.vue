@@ -17,12 +17,22 @@
         </div>
         
         <div id="body" class="px-24 py-8">
-            <div id="agendar" class="w-80 h-44 rounded-5 d-flex flex-column mb-3 align-items-center justify-content-center" style="background-color: #C5EBFE;">
-                <p class="text-xl">Faça o seu agendamento</p>                
-                <a href="/login" target="_blank">
-                    <button type="button" class="btn btn-primary btn-lg" style="background-color: #76BFAC; border: 4px solid #CFE3E1; border-radius: 14px;">Agendar</button>
-                </a>
-            </div>
+            <section class="d-flex flex-row align-items-start justify-content-around">
+                <div id="agendar" class="w-80 h-44 rounded-5 d-flex flex-column align-items-center justify-content-center" style="background-color: #C5EBFE;">
+                    <p class="text-xl">Faça o seu agendamento</p>                
+                    <a href="/login" target="_blank">
+                        <button type="button" class="btn btn-primary btn-lg" style="background-color: #76BFAC; border: 4px solid #CFE3E1; border-radius: 14px;">Agendar</button>
+                    </a>
+                </div>
+         
+                <div id="doctor">
+                    <img src="public\img\doctor.svg" alt="Doctor" width="500px" height="500px">
+                </div>
+            </section>
+
+            <main>
+
+            </main>
         </div>
 
         <div id="footer" class="px-24  flex flex-row items-center justify-between" style="background-color: #C5EBFE;">                
