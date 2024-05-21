@@ -17,7 +17,12 @@
         </div>
         
         <div id="body" class="px-24 py-8">
-            <h1>Home Page</h1>
+            <div id="agendar" class="w-80 h-44 d-flex flex-column mb-3 align-items-center justify-content-center" style="background-color: #C5EBFE;">
+                <p>Faça o seu agendamento</p>
+                <p>Botão agendar</p>
+            </div>
+
+            <br>
             <p><NuxtLink to="/login" target="_blank">Login Page</NuxtLink></p>
         </div>
 
