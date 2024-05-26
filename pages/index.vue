@@ -26,7 +26,7 @@
                 </div>
          
                 <div id="doctor">
-                    <img src="public\img\doctor.svg" alt="Doctor" width="500px" height="500px">
+                    <img src="assets\img\doctor.svg" alt="Doctor" width="500px" height="500px">
                 </div>
             </section>
 
