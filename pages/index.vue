@@ -11,7 +11,7 @@
                     <nav>
                         <a href="
                             https://www.google.com/maps/place/Praia+de+Ponta+Negra/@-5.8765216,-35.1769793,16.25z/data=!4m6!3m5!1s0x7b2ff2ae2c55695:0x3ba594c57ef58fc1!8m2!3d-5.8811012!4d-35.1629703!16zL20vMDlibXRf?entry=ttu
-                        ">
+                        " target="_blank">
                             <img src="assets\icon\vector.svg" alt="">                   
                         </a>
                     </nav>
@@ -24,35 +24,35 @@
                         <span>
                             <a href="
                                 https://www.youtube.com/@metropoledigital
-                            ">
+                            " target="_blank">
                                 <img src="assets\icon\youtube.svg" alt="">
                             </a>
                         </span>
                         <span>
                             <a href="
                                 https://www.facebook.com/MetropoleDigital/?locale=pt_BR
-                            ">
+                            " target="_blank">
                                 <img src="assets\icon\facebook.svg" alt="">
                             </a>
                         </span>
                         <span>                            
                             <a href="
                                 https://br.linkedin.com/school/metropoledigital/
-                            ">
+                            " target="_blank">
                                 <img src="assets\icon\linkedIn.svg" alt="">
                             </a>
                         </span>
                         <span>                            
                             <a href="
                                 https://www.instagram.com/metropoledigital/
-                            ">
+                            " target="_blank">
                                 <img src="assets\icon\instagram.svg" alt="">
                             </a>
                         </span>
                         <span>                            
                             <a href="
                                 https://web.whatsapp.com/
-                            ">
+                            " target="_blank">
                                 <img src="assets\icon\whatsapp.svg" alt="">
                             </a>
                         </span>
