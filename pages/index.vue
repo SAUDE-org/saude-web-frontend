@@ -19,7 +19,7 @@
                     <span>Av. Praia, 40 - Ponta Negra - Natal/RN</span>
                 </div>
 
-                <div id="telefone" class="">
+                <div id="telefone">
                     <nav class="flex flex-row items-center justify-between">
                         <span>
                             <a href="
@@ -89,8 +89,9 @@
         </article>
 
         <footer>
-            <div class="px-24  flex flex-row items-center justify-between" style="background-color: #C5EBFE;">                
-                <div id="foo-contato flex flex-items-center">
+<!--
+            <div class="px-24  flex flex-row items-start justify-between" style="background-color: #C5EBFE;">                
+                <div id="foo-contato grid content-center">
                     <p class="font-bold">Contato</p><br>
                     <p>Central da Saúde Ltda</p>
                     <p>CNPJ nº 00.000.000/0001-00</p>
@@ -108,6 +109,34 @@
                     <p class="font-bold">Localização</p><br>
                     <p>Av. Praia, 40 - Ponta Negra</p>
                     <p>Natal/RN</p>                
+                </div>
+            </div>
+-->
+            <div class="px-24  flex flex-row justify-between" style="background-color: #C5EBFE;">
+                <div id="foo-contato" class="grid content-center">
+                    <span class="py-6 text-xl font-bold flex justify-center">Contato</span>
+                    <div class="text-base">
+                        Central da Saúde Ltda <br>
+                        CNPJ nº 00.000.000/0001-00 <br>
+                        Resposnsável Técnico: Dr. Pires Silva <br>
+                        CRM/RN nº 9999 <br><br>
+                    </div>
+                </div>
+
+                <div id="foo-funcionamento" class="grid content-center">
+                    <span class="py-6 text-xl font-bold flex justify-center">Funcionamento</span>
+                    <div class="text-base">
+                        Segunda a Sexta <br>
+                        07:00 h às 1900 h <br><br>
+                    </div>
+                </div>
+
+                <div id="foo-funcionamento" class="grid content-center">
+                    <span class="py-6 text-xl font-bold flex justify-center">Localização</span>
+                    <div class="text-base">
+                        <div>Av. Praia, 40 - Ponta Negra</div>
+                        <div>Natal/RN</div>
+                    </div>
                 </div>
             </div>
         </footer>
