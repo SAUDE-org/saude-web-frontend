@@ -72,7 +72,7 @@
         </header>
 
         <article>
-            <div class="px-24 py-8">
+            <div class="mx-24 pt-8">
                 <section class="d-flex flex-row align-items-start justify-content-around">
                     <div id="agendar" class="w-80 h-44 rounded-5 d-flex flex-column align-items-center justify-content-center" style="background-color: #C5EBFE;">
                         <p class="text-xl text-center">Faça o seu agendamento</p>                
@@ -89,7 +89,7 @@
         </article>
 
         <footer>
-            <div class="px-24  flex flex-row justify-between" style="background-color: #C5EBFE;">
+            <div class="px-24 flex flex-row justify-between" style="background-color: #C5EBFE;">
                 <div id="foo-contato" class="grid content-center">
                     <span class="py-6 text-xl font-bold flex justify-center">Contato</span>
                     <div class="text-base">
