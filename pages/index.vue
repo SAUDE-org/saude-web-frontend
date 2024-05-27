@@ -89,29 +89,6 @@
         </article>
 
         <footer>
-<!--
-            <div class="px-24  flex flex-row items-start justify-between" style="background-color: #C5EBFE;">                
-                <div id="foo-contato grid content-center">
-                    <p class="font-bold">Contato</p><br>
-                    <p>Central da Saúde Ltda</p>
-                    <p>CNPJ nº 00.000.000/0001-00</p>
-                    <p>Resposnsável Técnico: Dr. Pires Silva</p>
-                    <p>CRM/RN nº 9999</p>                
-                </div>
-
-                <div id="foo-funcionamento">
-                    <p class="font-bold">Funcionamento</p><br>
-                    <p>Segunda a Sexta</p>
-                    <p>07:00 h às 1900 h</p>
-                </div>
-
-                <div id="foo-localizacao">
-                    <p class="font-bold">Localização</p><br>
-                    <p>Av. Praia, 40 - Ponta Negra</p>
-                    <p>Natal/RN</p>                
-                </div>
-            </div>
--->
             <div class="px-24  flex flex-row justify-between" style="background-color: #C5EBFE;">
                 <div id="foo-contato" class="grid content-center">
                     <span class="py-6 text-xl font-bold flex justify-center">Contato</span>
