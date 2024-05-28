@@ -6,7 +6,7 @@
 
     <div class="w-full h-full">
         <header>
-            <div id="contato" class="w-full h-12 px-24 flex flex-row items-center justify-between" style="background-color: #07B4BA;">
+            <div id="contato" class="w-full h-12 px-36 flex flex-row items-center justify-between" style="background-color: #07B4BA;">
                 <div id="endereco" class="flex flex-row">
                     <nav>
                         <a href="
@@ -61,7 +61,7 @@
                 </div>
             </div>
 
-            <div id="logo" class="w-full h-12 px-24 flex flex-row items-center justify-start" style="background-color: #C5EBFE;">
+            <div id="logo" class="w-full h-12 px-36 flex flex-row items-center justify-start" style="background-color: #C5EBFE;">
                 <span>
                     <img src="assets\icon\logo.svg" alt="Logo" width="50px" height="50px">
                 </span>
@@ -72,8 +72,8 @@
         </header>
 
         <article>
-            <div class="mx-24 pt-8">
-                <section class="d-flex flex-row align-items-start justify-content-around">
+            <div class="mx-36 pt-8">
+                <section class="d-flex flex-row space-x-4 align-items-start justify-content-around">
                     <div id="agendar" class="w-80 h-44 rounded-5 d-flex flex-column align-items-center justify-content-center" style="background-color: #C5EBFE;">
                         <p class="text-xl text-center">Faça o seu agendamento</p>                
                         <a href="/login" target="_blank">
@@ -88,8 +88,48 @@
             </div>
         </article>
 
+        <aside>
+
+            <div class="mx-36 py-4 flex justify-center text-2xl font-semibold">Temos diversas especialidades</div>
+            
+            <div class="mx-36 py-4 flex flex-row space-x-4 justify-between">                
+                <!--<div class="w-64 h-40">-->
+                <div>
+                    <img src="assets\img\fisioterapia.svg" alt="Fisioterapeutas">                  
+                    <span class="flex justify-center font-semibold">Fisioterapeutas</span>
+                </div>
+
+                <div>
+                    <img src="assets\img\psicologia.svg" alt="Psicólogos">
+                    <span class="flex justify-center font-semibold">Psicólogos</span>
+                </div>
+
+                <div>
+                    <img src="assets\img\medicos.svg" alt="Médicos">
+                    <span class="flex justify-center font-semibold">Médicos</span>
+                </div>
+            </div>
+
+            <div class="mx-36 py-4 flex flex-row space-x-4 justify-between">
+                <div>
+                    <img src="assets\img\enfermeiros.svg" alt="Enfermeiros">
+                    <span class="flex justify-center font-semibold">Enfermeiros</span>
+                </div>
+
+                <div>
+                    <img src="assets\img\home-care.svg" alt="Home Care">
+                    <span class="flex justify-center font-semibold">Home Care</span>
+                </div>
+
+                <div>
+                    <img src="assets\img\odontologista.svg" alt="Odontologistas">
+                    <span class="flex justify-center font-semibold">Odontologistas</span>
+                </div>
+            </div>
+        </aside>
+
         <footer>
-            <div class="px-24 flex flex-row justify-between" style="background-color: #C5EBFE;">
+            <div class="px-36 flex flex-row justify-between" style="background-color: #C5EBFE;">
                 <div id="foo-contato" class="grid content-center">
                     <span class="py-6 text-xl font-bold flex justify-center">Contato</span>
                     <div class="text-base">
