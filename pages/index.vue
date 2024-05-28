@@ -129,7 +129,7 @@
         </aside>
 
         <footer>
-            <div class="px-36 flex flex-row justify-between" style="background-color: #C5EBFE;">
+            <div class="px-36 flex flex-row space-x-4 justify-between" style="background-color: #C5EBFE;">
                 <div id="foo-contato" class="grid content-center">
                     <span class="py-6 text-xl font-bold flex justify-center">Contato</span>
                     <div class="text-base">
