@@ -92,38 +92,38 @@
 
             <div class="mx-36 py-4 flex justify-center text-2xl font-semibold">Temos diversas especialidades</div>
             
-            <div class="mx-36 py-4 flex flex-row space-x-4 justify-between">                
-                <!--<div class="w-64 h-40">-->
+            <div class="mx-36 py-4 flex flex-row space-x-4 justify-between">
                 <div>
-                    <img src="assets\img\fisioterapia.svg" alt="Fisioterapeutas">                  
-                    <span class="flex justify-center font-semibold">Fisioterapeutas</span>
+                    <img src="assets\img\fisioterapia.svg" alt="Fisioterapeutas">
+                   
+                    <span class="mt-2 px-2 border rounded-5 flex justify-center font-semibold" style="background-color: #C5EBFE;">Fisioterapeutas</span>
                 </div>
 
                 <div>
                     <img src="assets\img\psicologia.svg" alt="Psicólogos">
-                    <span class="flex justify-center font-semibold">Psicólogos</span>
+                    <span class="mt-2 px-2 border rounded-5 flex justify-center font-semibold" style="background-color: #C5EBFE;">Psicólogos</span>
                 </div>
 
                 <div>
                     <img src="assets\img\medicos.svg" alt="Médicos">
-                    <span class="flex justify-center font-semibold">Médicos</span>
+                    <span class="mt-2 px-2 border rounded-5 flex justify-center font-semibold" style="background-color: #C5EBFE;">Médicos</span>
                 </div>
             </div>
 
             <div class="mx-36 py-4 flex flex-row space-x-4 justify-between">
                 <div>
                     <img src="assets\img\enfermeiros.svg" alt="Enfermeiros">
-                    <span class="flex justify-center font-semibold">Enfermeiros</span>
+                    <span class="mt-2 px-2 border rounded-5 flex justify-center font-semibold" style="background-color: #C5EBFE;">Enfermeiros</span>
                 </div>
 
                 <div>
                     <img src="assets\img\home-care.svg" alt="Home Care">
-                    <span class="flex justify-center font-semibold">Home Care</span>
+                    <span class="mt-2 px-2 border rounded-5 flex justify-center font-semibold" style="background-color: #C5EBFE;">Home Care</span>
                 </div>
 
                 <div>
                     <img src="assets\img\odontologista.svg" alt="Odontologistas">
-                    <span class="flex justify-center font-semibold">Odontologistas</span>
+                    <span class="mt-2 px-2 border rounded-5 flex justify-center font-semibold" style="background-color: #C5EBFE;">Odontologistas</span>
                 </div>
             </div>
         </aside>
