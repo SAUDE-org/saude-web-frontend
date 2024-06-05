@@ -68,7 +68,7 @@
                     <a href="/esqueciSenha">Esqueci minha senha</a>
                 </span>
                 <span>                    
-                    <a href="/cadastro">Cadastre-se</a>
+                    <a href="/cadastros/cadastroInicial">Cadastre-se</a>
                 </span>
             </nav>
         </main>
