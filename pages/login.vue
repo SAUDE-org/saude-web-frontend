@@ -5,7 +5,7 @@
                 <figure>
                     <img src="assets\icon\tetoscope.svg" alt="">
                 </figure>
-                <span>
+                <span class="text-gray-500 italic">
                     <h1>Login do Sistema</h1>
                 </span>
             </div>
