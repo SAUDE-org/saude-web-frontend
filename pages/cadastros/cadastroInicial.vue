@@ -52,5 +52,5 @@
                 </a>
             </nav>
         </main>
-</div>
+    </div>
 </template>
