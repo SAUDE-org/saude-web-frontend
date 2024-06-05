@@ -43,7 +43,7 @@
             </div>
 
             <!--botão entrar-->
-            <nav class="m-6 flex items-center justify-center">
+            <nav class="mt-6 flex items-center justify-center">
                 <a href="/tipoUsuario">
                     <button id="btnEntrar" type="button" class="w-60 btn btn-primary btn-lg"
                         style="background-color: #76BFAC; border: 4px solid #CFE3E1; border-radius: 14px;">
@@ -52,15 +52,14 @@
                 </a>
             </nav>
 
-            <div>
-                <div>
-                    <!--box esqueci minha senha-->
-                </div>
-
-                <div>
-                    <!--box cadastre-me-->
-                </div>
-            </div>
+            <nav class="w-60 px-2 flex flex-row items-center justify-between text-sm italic font-extralight text-blue-400">
+                <span>                    
+                    <a href="/esqueciSenha">Esqueci minha senha</a>
+                </span>
+                <span>                    
+                    <a href="/cadastro">Cadastre-se</a>
+                </span>
+            </nav>
         </main>
     </div>
 </template>
