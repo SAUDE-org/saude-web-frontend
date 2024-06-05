@@ -1,6 +1,17 @@
 <template>
     <div class="w-full h-full">
-        <main class="m-24 flex flex-col items-center">
+
+        <header class="flex justify-end">
+            <nav class="pr-32 pt-8">
+                <a href="index.vue">
+                    <img src="assets\icon\BotaoHome.svg" alt="">
+                </a>
+            </nav>
+        </header>
+
+        <main class="mx-24 mt-8 flex flex-col items-center">
+            
+            <!--box título-->
             <div id="titLogin" class="flex flex-row items-center justify-center">
                 <figure>
                     <img src="assets\icon\tetoscope.svg" alt="">
