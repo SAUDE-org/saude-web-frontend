@@ -2,14 +2,14 @@
     <div class="w-full h-full">
 
         <header class="flex justify-end">
-            <nav class="pr-32 pt-8">
+            <nav class="mr-32 mt-8">
                 <a href="index.vue">
                     <img src="assets\icon\BotaoHome.svg" alt="">
                 </a>
             </nav>
         </header>
 
-        <main class="mx-24 mt-8 flex flex-col items-center">
+        <main class="mx-24 mt-4 flex flex-col items-center">
             
             <!--box paciente-->
             <div id="titCadastro" class="flex flex-row items-center justify-center">
@@ -21,8 +21,29 @@
                 </span>
             </div>
 
+            <!--tipos de usuário-->
+            <div class="my-12 flex flex-row items-center justify-center">
+                <nav class="mx-12 flex grow">
+                    <a href="">
+                        <img src="assets\icon\paciente.svg" alt="">
+                    </a>
+                </nav>
+
+                <nav class="mx-12 flex grow">
+                    <a href="">
+                        <img src="assets\icon\profissional.svg" alt="">
+                    </a>
+                </nav>
+
+                <nav class="mx-12 flex grow">
+                    <a href="">
+                        <img src="assets\icon\clínica.svg" alt="">
+                    </a>
+                </nav>               
+            </div>
+
             <!--botão voltar-->
-            <nav class="mt-6 flex items-center justify-center">
+            <nav class="my-12 flex items-center justify-center">
                 <a href="/login">
                     <button id="btnVoltar" type="button" class="w-60 btn btn-primary btn-lg"
                         style="background-color: #76BFAC; border: 4px solid #CFE3E1; border-radius: 14px;">
