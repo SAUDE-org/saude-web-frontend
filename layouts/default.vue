@@ -4,6 +4,6 @@
     </div>
 </template>
 
-<style>
-    @import url("../assets/css/imgfundo.css");
-</style>
+<script>
+    import ('../assets/css/imgfundo.css');
+</script>
