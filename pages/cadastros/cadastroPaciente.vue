@@ -12,7 +12,7 @@
         <main class="mx-24 mt-8 flex flex-col items-center">
             
             <!--box título-->
-            <div id="titCadPaciente" class="flex flex-row items-center justify-center">                
+            <div id="titCadPaciente" class="mb-8 flex flex-row items-center justify-center">                
                 <span class="text-gray-500 italic">
                     <h1>Cadastro de Paciente</h1>
                 </span>

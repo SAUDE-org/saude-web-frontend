@@ -12,7 +12,7 @@
         <main class="mx-24 mt-8 flex flex-col items-center">
             
             <!--box título-->
-            <div id="titLogin" class="flex flex-row items-center justify-center">
+            <div id="titLogin" class="mb-8 flex flex-row items-center justify-center">
                 <figure>
                     <img src="assets\icon\tetoscope.svg" alt="">
                 </figure>
