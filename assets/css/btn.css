@@ -1,0 +1,11 @@
+/* Estilização do botão */
+.btn {
+    width: 200px;
+    background-color: #76BFAC;
+    border: 4px solid #CFE3E1;
+    border-radius: 14px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+}
