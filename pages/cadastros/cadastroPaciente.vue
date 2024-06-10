@@ -78,7 +78,7 @@
                     </div>
                 </div>
 
-            <!--botão cadastrar-->
+            <!--botão cadastrar
             <nav class="my-8 flex items-center justify-center">
                 <a href="/login">
                     <button id="btn-voltar" type="button" class="w-60 btn btn-primary btn-lg"
@@ -87,7 +87,22 @@
                     </button>
                 </a>
             </nav>
+            -->
+
+            <!--botão cadastrar-->
+            <nav class="my-8 flex items-center justify-center">
+                <button id="btn-cadastrar" class="btn">
+                    Cadastrar
+                </button>
+            </nav>
+
+
+
 
         </main>
     </div>
 </template>
+
+<style>
+    @import url("~/assets/css/btn.css");
+</style>
