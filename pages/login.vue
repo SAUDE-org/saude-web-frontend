@@ -3,7 +3,7 @@
 
         <header class="flex justify-end">
             <nav class="pr-32 pt-8">
-                <a href="index.vue">
+                <a href="http://localhost:3000/">
                     <img src="assets\icon\BotaoHome.svg" alt="">
                 </a>
             </nav>
