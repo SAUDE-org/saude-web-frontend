@@ -188,5 +188,7 @@
 </template>
 
 <script setup>
-    
+    definePageMeta({
+        layout: "vazio",
+    });
 </script>
