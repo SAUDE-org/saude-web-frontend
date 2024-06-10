@@ -89,12 +89,26 @@
             </nav>
             -->
 
-            <!--botão cadastrar-->
+            <!--botão cadastrar
             <nav class="my-8 flex items-center justify-center">
                 <button id="btn-cadastrar" class="btn">
                     Cadastrar
                 </button>
             </nav>
+            -->
+
+
+            <!--botão cadastrar-->
+            <nav class="my-8 flex items-center justify-center">
+                <a href="/login">
+                    <button id="btn-cadastrar" class="btn">
+                        Cadastrar
+                    </button>
+                </a>
+            </nav>
+
+            <!-- Caixa de alerta personalizada -->
+            <div id="alertBox"></div>
 
 
 
@@ -102,6 +116,12 @@
         </main>
     </div>
 </template>
+
+<script>
+    /**
+    @import url("~/assets/js/btn.js");
+     */
+</script>
 
 <style>
     @import url("~/assets/css/btn.css");
