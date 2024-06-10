@@ -28,7 +28,7 @@
                     <img src="assets\icon\icon _mail_.svg" alt="">
                 </div>
                 <div class="grow">
-                    <input class="form-control fw-lighter" id="formInputUsuario" type="text" placeholder="Digite seu usuário aqui"
+                    <input class="form-control fw-lighter" id="usuario" type="text" placeholder="Digite seu usuário aqui"
                         style="background-color: #ecf3f1; border-color: #ecf3f1;">
                 </div>
             </div>
@@ -40,7 +40,7 @@
                     <img src="assets\icon\icon _lock_.svg" alt="">
                 </div>
                 <div class="grow">
-                    <input class="form-control fw-lighter" id="formInputSenha" type="password" placeholder="Digite sua senha aqui"
+                    <input class="form-control fw-lighter" id="senha" type="password" placeholder="Digite sua senha aqui"
                         style="background-color: #ecf3f1; border-color: #ecf3f1;">
                 </div>
             </div>
@@ -56,7 +56,7 @@
             <!--botão entrar-->
             <nav class="mt-6 flex items-center justify-center">
                 <a href="/tipoUsuario">
-                    <button id="btnEntrar" type="button" class="w-60 btn btn-primary btn-lg"
+                    <button id="btn-entrar" type="button" class="w-60 btn btn-primary btn-lg"
                         style="background-color: #76BFAC; border: 4px solid #CFE3E1; border-radius: 14px;">
                         Entrar
                     </button>
