@@ -9,7 +9,7 @@
             </nav>
         </header>
 
-        <main class="mx-24 mt-4 flex flex-auto flex-col items-center">
+        <main class="mx-24 mt-8 flex flex-col items-center">
             
             <!--box título-->
             <div id="titCadPaciente" class="flex flex-row items-center justify-center">                
@@ -17,6 +17,69 @@
                     <h1>Cadastro de Paciente</h1>
                 </span>
             </div>
+
+                <!--box input texto nome-->
+                <div class="w-25 h-14 mb-2 flex flex-row items-center justify-items-stretch"
+                    style="background-color: #ecf3f1; border-radius: 14px;">
+                    <div class="p-2 italic text-slate-600">
+                        Nome
+                    </div>
+                    <div class="grow">
+                        <input class="form-control fw-lighter" id="nome" type="text" placeholder="Digite seu nome aqui"
+                            style="background-color: #ecf3f1; border-color: #ecf3f1;">
+                    </div>
+                </div>
+
+                <!--box input texto cpf-->
+                <div class="w-25 h-14 mb-2 flex flex-row items-center justify-items-stretch"
+                    style="background-color: #ecf3f1; border-radius: 14px;">
+                    <div class="p-2 italic text-slate-600">
+                        CPF
+                    </div>
+                    <div class="grow">
+                        <input class="form-control fw-lighter" id="cpf" type="text" placeholder="Digite seu cpf aqui"
+                            style="background-color: #ecf3f1; border-color: #ecf3f1;">
+                    </div>
+                </div>
+
+                <!--box input texto email-->
+                <div class="w-25 h-14 mb-2 flex flex-row items-center justify-items-stretch"
+                    style="background-color: #ecf3f1; border-radius: 14px;">
+                    <div class="p-2 italic text-slate-600">
+                        E-mail
+                    </div>
+                    <div class="grow">
+                        <input class="form-control fw-lighter" id="email" type="text" placeholder="Digite seu email aqui"
+                            style="background-color: #ecf3f1; border-color: #ecf3f1;">
+                    </div>
+                </div>
+
+                <!--box input texto telefone-->
+                <div class="w-25 h-14 mb-2 flex flex-row items-center justify-items-stretch"
+                    style="background-color: #ecf3f1; border-radius: 14px;">
+                    <div class="p-2 italic text-slate-600">
+                        Telefone
+                    </div>
+                    <div class="grow">
+                        <input class="form-control fw-lighter" id="telefone" type="text" placeholder="Digite neste formato: (99) 99999-9999"
+                            style="background-color: #ecf3f1; border-color: #ecf3f1;">
+                    </div>
+                </div>
+
+                <!--box input texto endereço-->
+                <div class="w-25 h-14 mb-2 flex flex-row items-center justify-items-stretch"
+                    style="background-color: #ecf3f1; border-radius: 14px;">
+                    <div class="p-2 italic text-slate-600">
+                        Endereço
+                    </div>
+                    <div class="grow">
+                        <input class="form-control fw-lighter" id="endereco" type="text" placeholder="Digite seu endereço completo aqui"
+                            style="background-color: #ecf3f1; border-color: #ecf3f1;">
+                    </div>
+                </div>
+
+
+
         </main>
 
     </div>
