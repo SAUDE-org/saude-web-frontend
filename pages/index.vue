@@ -91,9 +91,7 @@
                     -->
                     
                     <a href="/login">
-                        <BotaoNav>
-                            Agendar                            
-                        </BotaoNav>
+                        <BotaoNav>Agendar</BotaoNav>
                     </a>
 
                     </div>

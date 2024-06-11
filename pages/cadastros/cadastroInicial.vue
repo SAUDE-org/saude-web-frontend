@@ -1,3 +1,7 @@
+<script setup lang="ts">
+import BotaoNav from '~/components/BotaoNav.vue';
+</script>
+
 <template>
     <div class="w-full h-full">
 
@@ -43,14 +47,9 @@
             </div>
 
             <!--botão voltar-->
-            <nav class="my-8 flex items-center justify-center">
-                <a href="/login">
-                    <button id="btn-voltar" type="button" class="w-60 btn btn-primary btn-lg"
-                        style="background-color: #76BFAC; border: 4px solid #CFE3E1; border-radius: 14px;">
-                        Voltar
-                    </button>
-                </a>
-            </nav>
+            <a href="/login">
+                <BotaoNav>Voltar</BotaoNav>
+            </a>
         </main>
     </div>
 </template>
