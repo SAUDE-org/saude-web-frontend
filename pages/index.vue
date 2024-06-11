@@ -79,6 +79,7 @@
                     <div id="agendar" class="w-80 h-44 rounded-5 d-flex flex-column align-items-center justify-content-center"
                       style="background-color: #C5EBFE;">
                         <p class="text-xl text-center">Faça o seu agendamento</p>
+                    <!--
                         <nav>
                             <a href="/login" target="_blank">
                                 <button id="btnAgendar" type="button" class="btn btn-primary btn-lg"
@@ -87,6 +88,14 @@
                                 </button>
                             </a>
                         </nav>
+                    -->
+                    
+                    <a href="/login">
+                        <BotaoNav>
+                            Agendar                            
+                        </BotaoNav>
+                    </a>
+
                     </div>
             
                     <div id="doctor">
@@ -188,6 +197,8 @@
 </template>
 
 <script setup>
+import BotaoNav from '~/components/BotaoNav.vue';
+
     definePageMeta({
         layout: "vazio",
     });

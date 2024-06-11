@@ -2,11 +2,7 @@
     <div class="w-full h-full">
 
         <header class="flex justify-end">
-            <nav class="mr-32 mt-8">
-                <a href="http://localhost:3000/">
-                    <img src="assets\icon\BotaoSair.svg" alt="Botão Sair">
-                </a>
-            </nav>
+            <BotaoSair />
         </header>
 
         <main class="mx-24 mt-8 flex flex-col items-center">
@@ -97,9 +93,9 @@
             </nav>
             -->
 
-
+            <br>
             <!--botão cadastrar-->
-            <nav class="my-8 flex items-center justify-center">
+            <nav>
                 <a href="/login">
                     <button id="btn-cadastrar" onclick="" type="button" class="btn">
                         Cadastrar
@@ -115,6 +111,8 @@
 </template>
 
 <script setup>
+import BotaoSair from '~/components/BotaoSair.vue';
+
     /**
     @import url("~/assets/js/btn.js");
      */
