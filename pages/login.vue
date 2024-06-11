@@ -1,12 +1,12 @@
+<script setup lang="ts">
+import BotaoHome from '~/components/BotaoHome.vue';
+</script>
+
 <template>
     <div class="w-full h-full">
 
         <header class="flex justify-end">
-            <nav class="pr-32 pt-8">
-                <a href="http://localhost:3000/">
-                    <img src="assets\icon\BotaoHome.svg" alt="">
-                </a>
-            </nav>
+            <BotaoHome />
         </header>
 
         <main class="mx-24 mt-8 flex flex-col items-center">
