@@ -101,7 +101,7 @@
             <!--botão cadastrar-->
             <nav class="my-8 flex items-center justify-center">
                 <a href="/login">
-                    <button id="btn-cadastrar" class="btn">
+                    <button id="btn-cadastrar" onclick="" type="button" class="btn">
                         Cadastrar
                     </button>
                 </a>
@@ -110,14 +110,11 @@
             <!-- Caixa de alerta personalizada -->
             <div id="alertBox"></div>
 
-
-
-
         </main>
     </div>
 </template>
 
-<script>
+<script setup>
     /**
     @import url("~/assets/js/btn.js");
      */

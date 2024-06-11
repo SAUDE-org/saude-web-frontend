@@ -56,7 +56,7 @@
             <!--botão entrar-->
             <nav class="mt-6 flex items-center justify-center">
                 <a href="/tipoUsuario">
-                    <button id="btn-entrar" type="button" class="w-60 btn btn-primary btn-lg"
+                    <button id="btn-entrar" onclick="" type="button" class="w-60 btn btn-primary btn-lg"
                         style="background-color: #76BFAC; border: 4px solid #CFE3E1; border-radius: 14px;">
                         Entrar
                     </button>
