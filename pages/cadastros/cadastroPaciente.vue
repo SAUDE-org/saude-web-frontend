@@ -16,7 +16,7 @@
 
                 <!--box input texto nome-->
                 <div class="w-25 h-14 mb-2 flex flex-row items-center justify-items-stretch"
-                    style="background-color: #ecf3f1; border-radius: 14px;">
+                    style="background-color: #ecf3f1; border-radius: 25px;">
                     <div class="p-2 italic text-slate-600">
                         Nome
                     </div>
@@ -28,7 +28,7 @@
 
                 <!--box input texto cpf-->
                 <div class="w-25 h-14 mb-2 flex flex-row items-center justify-items-stretch"
-                    style="background-color: #ecf3f1; border-radius: 14px;">
+                    style="background-color: #ecf3f1; border-radius: 25px;">
                     <div class="p-2 italic text-slate-600">
                         CPF
                     </div>
@@ -40,7 +40,7 @@
 
                 <!--box input texto email-->
                 <div class="w-25 h-14 mb-2 flex flex-row items-center justify-items-stretch"
-                    style="background-color: #ecf3f1; border-radius: 14px;">
+                    style="background-color: #ecf3f1; border-radius: 25px;">
                     <div class="p-2 italic text-slate-600">
                         E-mail
                     </div>
@@ -52,7 +52,7 @@
 
                 <!--box input texto telefone-->
                 <div class="w-25 h-14 mb-2 flex flex-row items-center justify-items-stretch"
-                    style="background-color: #ecf3f1; border-radius: 14px;">
+                    style="background-color: #ecf3f1; border-radius: 25px;">
                     <div class="p-2 italic text-slate-600">
                         Telefone
                     </div>
@@ -64,7 +64,7 @@
 
                 <!--box input texto endereço-->
                 <div class="w-25 h-14 mb-2 flex flex-row items-center justify-items-stretch"
-                    style="background-color: #ecf3f1; border-radius: 14px;">
+                    style="background-color: #ecf3f1; border-radius: 25px;">
                     <div class="p-2 italic text-slate-600">
                         Endereço
                     </div>
