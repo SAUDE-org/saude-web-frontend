@@ -24,19 +24,19 @@ import BotaoSair from '~/components/BotaoSair.vue';
             <!--tipos de usuário-->
             <div class="my-8 flex flex-row items-center justify-center">
                 <nav class="mx-12 flex grow">
-                    <a href="">
+                    <a href="/sig/paciente">
                         <img src="assets\icon\paciente.svg" alt="">
                     </a>
                 </nav>
 
                 <nav class="mx-12 flex grow">
-                    <a href="">
+                    <a href="/sig/profissional">
                         <img src="assets\icon\profissional.svg" alt="">
                     </a>
                 </nav>
 
                 <nav class="mx-12 flex grow">
-                    <a href="">
+                    <a href="/sig/clinica">
                         <img src="assets\icon\clínica.svg" alt="">
                     </a>
                 </nav>               
