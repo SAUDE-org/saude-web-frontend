@@ -22,6 +22,7 @@
                     Sua próxima consulta agendada é:
             </div>
 
+            <!-- Box dados próxima consulta-->
             <div id="prox-consulta" style="border: solid; border-radius: 14px; border-color: #39D0CB;">
                 <div class="p-2 flex flex-row items-start">
 
@@ -46,6 +47,7 @@
             </div>
 
             <Titulo />
+            <br>
             <div id="titulo">Você quer agendar uma</div>
             <div id="titulo">consulta ou ver seus exames?</div>
 

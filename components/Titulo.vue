@@ -1,5 +1,5 @@
 <template>
-    <span class="mt-4 flex flex-col items-center">
+    <span class="flex flex-col items-center">
         <slot />
     </span>
 </template>
