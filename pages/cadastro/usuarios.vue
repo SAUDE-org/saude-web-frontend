@@ -25,19 +25,19 @@ import BotaoNav from '~/components/BotaoNav.vue';
             <!--tipos de usuário-->
             <div class="my-8 flex flex-row items-center justify-center">
                 <nav class="mx-12 flex grow">
-                    <a href="/cadastros/cadastroPaciente">
+                    <a href="/cadastro/paciente">
                         <img src="assets\icon\paciente.svg" alt="">
                     </a>
                 </nav>
 
                 <nav class="mx-12 flex grow">
-                    <a href="/cadastros/cadastroProfissional">
+                    <a href="/cadastro/profissional">
                         <img src="assets\icon\profissional.svg" alt="">
                     </a>
                 </nav>
 
                 <nav class="mx-12 flex grow">
-                    <a href="/cadastros/cadastroClinica">
+                    <a href="/cadastro/clinica">
                         <img src="assets\icon\clínica.svg" alt="">
                     </a>
                 </nav>               

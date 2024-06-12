@@ -55,7 +55,7 @@ import BotaoHome from '~/components/BotaoHome.vue';
 
             <!--botão entrar-->
             <nav class="mt-6 flex items-center justify-center">
-                <a href="/tipoUsuario">
+                <a href="/tipo-usuario">
                     <button id="btn-entrar" onclick="" type="button" class="w-60 btn btn-primary btn-lg"
                         style="background-color: #76BFAC; border: 4px solid #CFE3E1; border-radius: 14px;">
                         Entrar
@@ -65,10 +65,10 @@ import BotaoHome from '~/components/BotaoHome.vue';
 
             <nav class="w-60 px-2 flex flex-row items-center justify-between text-sm italic font-extralight text-blue-400">
                 <span>                    
-                    <a href="/esqueciSenha">Esqueci minha senha</a>
+                    <a href="/esqueci-senha">Esqueci minha senha</a>
                 </span>
                 <span>                    
-                    <a href="/cadastros/cadastroInicial">Cadastre-se</a>
+                    <a href="/cadastro/usuarios">Cadastre-se</a>
                 </span>
             </nav>
         </main>
