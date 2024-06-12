@@ -5,7 +5,7 @@ import BotaoSair from '~/components/BotaoSair.vue';
 <template>
     <div class="w-full h-full">
 
-        <header class="flex justify-end">
+        <header class="pt-8 flex justify-end">
             <BotaoSair />
         </header>
 
