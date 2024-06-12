@@ -2,7 +2,7 @@
     <div class="w-full h-full">
 
         <header class="flex justify-end">
-            <BotaoSair />
+            <BotaoHome />
         </header>
 
         <main class="mx-24 mt-8 flex flex-col items-center">
