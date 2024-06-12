@@ -1,5 +1,5 @@
 <template>
-    <nav class="mr-32 mt-8">
+    <nav class="pr-32">
         <a href="http://localhost:3000/">
             <img src="assets\icon\BotaoSair.svg" alt="Botão Sair">
         </a>
