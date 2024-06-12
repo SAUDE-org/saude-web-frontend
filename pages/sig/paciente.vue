@@ -49,9 +49,19 @@
             <div id="titulo">Você quer agendar uma</div>
             <div id="titulo">consulta ou ver seus exames?</div>
 
+            <div class="my-8 flex flex-row items-center justify-center">
+                <nav class="mx-8 flex grow">
+                    <a href="/sig/pacientes/agendar">
+                        <img src="assets/icon/consultas-man.svg" alt="Consultas">
+                    </a>
+                </nav>
 
+                <nav class="mx-8 flex grow">
+                    <a href="/sig/pacientes/exames">
+                        <img src="assets/icon/exames.svg" alt="Exames">
+                    </a>
+                </nav>
+            </div>
         </main>
-
     </div>
-
 </template>
