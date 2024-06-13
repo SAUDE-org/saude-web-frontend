@@ -10,3 +10,17 @@
     cursor: pointer;
     font-size: larger;
 }
+
+.btn-peq {
+    width: 180px;
+    height: 40px;
+    background-color: #07B4BA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: large;
+}

@@ -14,8 +14,8 @@
             <Titulo />
             <div id="titulo">Especialidades disponíveis:</div>
 
-            <!-- Box dados especialidades disponpiveis-->
-            <div style="border: solid; border-radius: 14px; border-color: #39D0CB;">
+            <!-- Box dados especialidades disponíveis-->
+            <div class="mt-2" style="border: solid; border-radius: 14px; border-color: #39D0CB;">
                 <div class="p-2 flex flex-row items-start">
 
                     <div class="pr-4">
@@ -30,13 +30,14 @@
                         </div>
                     </div>
 
-                    <div id="local-consulta" class="flex flex-col items-end">
-                        <span class="text-xl font-semibold">Hospital Ponta Negra</span>
-                        <span>Av. Ayrton Senna, 34 - Capim Macio</span>
+                    <div>
+                        <div id="local-consulta" class="flex flex-col items-end">
+                            <span class="text-xl font-semibold">Hospital Ponta Negra</span>
+                            <span>Av. Ayrton Senna, 34 - Capim Macio</span>
+                        </div>
+
+                        <BotaoSubPeq>Agendar Consulta</BotaoSubPeq>
                     </div>
-
-                    <BotaoNav>Agendar Consulta</BotaoNav>
-
                 </div>
             </div>
         </main>
