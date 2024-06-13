@@ -42,9 +42,10 @@ import BotaoSair from '~/components/BotaoSair.vue';
                 </nav>               
             </div>            
 
-
-
-
+            <!--botão voltar-->
+            <a href="/login">
+                <BotaoNav>Voltar</BotaoNav>
+            </a>
         </main>
     </div>
 </template>
