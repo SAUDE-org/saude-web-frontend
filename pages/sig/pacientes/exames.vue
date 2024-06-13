@@ -115,8 +115,13 @@
                             <span class="text-xl font-semibold">Hospital Ponta Negra</span>
                             <span class="mt-1 font-bold text-red-600">Pendente</span>
                         </div>
-
+                    
+                    <!--
                         <BotaoView>Visualizar</BotaoView>
+                    -->
+                        <BotaoView :abrirNovaAba="abrirNovaAba">Visualizar</BotaoView>
+                    
+
                     </div>
                 </div>
             </div>
@@ -128,3 +133,10 @@
         </main>
     </div>
 </template>
+
+<script setup>
+// Defina a função para abrir uma nova aba
+const abrirNovaAba = () => {
+  window.open('/assets/docs/exame-modelo.svg', '_blank');
+};
+</script>
