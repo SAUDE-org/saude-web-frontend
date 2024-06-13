@@ -121,6 +121,11 @@
                     </div>
                 </div>
             </div>
+
+            <!--botão voltar-->
+            <a href="/sig/paciente">
+                <BotaoNav>Voltar</BotaoNav>
+            </a>
         </main>
     </div>
 </template>
