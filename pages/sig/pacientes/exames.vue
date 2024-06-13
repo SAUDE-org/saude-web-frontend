@@ -14,7 +14,7 @@
             <div id="titulo">Lista de Exames</div>
 
             <!-- Box dados lista de Exames-->
-            <div class="mt-2" style="border: solid; border-radius: 14px; border-color: #39D0CB;">
+            <div class="mt-2" style="background-color: #ECF3F1; border: solid; border-radius: 14px; border-color: #39D0CB;">
                 <div class="p-2 flex flex-row items-start">
 
                     <div class="pr-4">
@@ -35,7 +35,7 @@
                             <span class="mt-1 font-bold text-green-700">Concluído</span>
                         </div>
 
-                        <BotaoSubPeq>Visualizar</BotaoSubPeq>
+                        <BotaoView>Visualizar</BotaoView>
                     </div>
                 </div>
             </div>
