@@ -66,7 +66,13 @@
                         <img src="assets/icon/exames.svg" alt="Exames">
                     </a>
                 </nav>
+                
             </div>
+
+            <!--botão voltar-->
+            <a href="/tipo-usuario">
+                <BotaoNav>Voltar</BotaoNav>
+            </a>
         </main>
     </div>
 </template>
