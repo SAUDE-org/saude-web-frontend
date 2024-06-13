@@ -15,7 +15,7 @@
             <div id="titulo">Especialidades disponíveis:</div>
 
             <!-- Box dados especialidades disponpiveis-->
-            <div id="prox-consulta" style="border: solid; border-radius: 14px; border-color: #39D0CB;">
+            <div style="border: solid; border-radius: 14px; border-color: #39D0CB;">
                 <div class="p-2 flex flex-row items-start">
 
                     <div class="pr-4">
@@ -34,6 +34,8 @@
                         <span class="text-xl font-semibold">Hospital Ponta Negra</span>
                         <span>Av. Ayrton Senna, 34 - Capim Macio</span>
                     </div>
+
+                    <BotaoNav>Agendar Consulta</BotaoNav>
 
                 </div>
             </div>
