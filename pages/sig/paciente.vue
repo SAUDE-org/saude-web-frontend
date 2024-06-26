@@ -23,6 +23,30 @@
             </div>
 
             <!-- Box dados próxima consulta-->
+            <!-- <div id="prox-consulta" style="width: 470px; border: solid; border-radius: 14px; border-color: #39D0CB;">
+                <div class="p-2 flex justify-between">
+
+                    <div class="pr-4">
+                        <div id="profissional" class="flex flex-col items-start">
+                            <span class="text-xl font-semibold">Nutricionista</span>
+                            <span>Dra. Ana Maria Braga</span>
+                        </div>
+
+                        <div id="data-consulta" class="mt-4 flex flex-col items-start">
+                            <span>Seg., 22 de ago. de 2024</span>
+                            <span id="data-consulta">11:30h</span>
+                        </div>
+                    </div>
+
+                    <div id="local-consulta" class="flex flex-col items-end">
+                        <span class="text-xl font-semibold">Hospital Ponta Negra</span>
+                        <span>Av. Ayrton Senna, 34 - Capim Macio</span>
+                    </div>
+
+                </div>
+            </div> -->
+
+            <!-- Teste API: Box dados próxima consulta-->
             <div id="prox-consulta" style="width: 470px; border: solid; border-radius: 14px; border-color: #39D0CB;">
                 <div class="p-2 flex justify-between">
 
@@ -44,6 +68,14 @@
                     </div>
 
                 </div>
+            </div>
+
+            <!-- Teste: Dados API-->
+            <div class="m-8">
+                <h3>Dados API CEP</h3>
+                <div v-if="pending">Carregando...</div>
+                <div v-else-if="error"> Erro: {{ error.message }}</div>
+                <pre v-else>{{ user }}</pre>
             </div>
 
             <Titulo />
@@ -76,3 +108,46 @@
         </main>
     </div>
 </template>
+
+
+<script setup>
+const {
+    data: user,
+    pending,
+    error,
+    refresh,
+    status
+} = await useFetch('https://reqres.in/api/users/2', {
+});
+</script>
+
+
+<!-- <script setup>
+import { computed } from "vue";
+
+const cepPego = ref("api-cep");
+
+const endpoint = computed(() => {
+    return 'https://docs.awesomeapi.com.br/${cep.value}';
+});
+
+const {
+    data: agenda,
+    pending,
+    error,
+    refresh,
+    status
+} = await useFetch(endpoint, {
+    method: "GET",
+    headers: {
+        "Content-Type": "application/json"
+    },
+    transform: (data) => ({
+        cep: data.cep,
+        endereco: data.address_type,
+        profissional: data.address_name,
+        cidade: data.city,
+        estado: data.state,
+    }),
+});
+</script> -->
