@@ -109,7 +109,6 @@
     </div>
 </template>
 
-
 <script setup>
 const {
     data: user,
@@ -121,33 +120,15 @@ const {
 });
 </script>
 
-
 <!-- <script setup>
-import { computed } from "vue";
-
-const cepPego = ref("api-cep");
-
-const endpoint = computed(() => {
-    return 'https://docs.awesomeapi.com.br/${cep.value}';
-});
-
 const {
-    data: agenda,
+    data: user,
     pending,
     error,
     refresh,
     status
-} = await useFetch(endpoint, {
-    method: "GET",
-    headers: {
-        "Content-Type": "application/json"
-    },
-    transform: (data) => ({
-        cep: data.cep,
-        endereco: data.address_type,
-        profissional: data.address_name,
-        cidade: data.city,
-        estado: data.state,
-    }),
+} = await useFetch('https://reqres.in/api/users/2', {
 });
 </script> -->
+
+
