@@ -23,8 +23,8 @@
             </div>
 
             <!-- Box dados próxima consulta-->
-            <div id="prox-consulta" style="border: solid; border-radius: 14px; border-color: #39D0CB;">
-                <div class="p-2 flex flex-row items-start">
+            <div id="prox-consulta" style="width: 470px; border: solid; border-radius: 14px; border-color: #39D0CB;">
+                <div class="p-2 flex justify-between">
 
                     <div class="pr-4">
                         <div id="profissional" class="flex flex-col items-start">
