@@ -22,30 +22,6 @@
                     Sua próxima consulta agendada é:
             </div>
 
-            <!-- Box dados próxima consulta-->
-            <!-- <div id="prox-consulta" style="width: 470px; border: solid; border-radius: 14px; border-color: #39D0CB;">
-                <div class="p-2 flex justify-between">
-
-                    <div class="pr-4">
-                        <div id="profissional" class="flex flex-col items-start">
-                            <span class="text-xl font-semibold">Nutricionista</span>
-                            <span>Dra. Ana Maria Braga</span>
-                        </div>
-
-                        <div id="data-consulta" class="mt-4 flex flex-col items-start">
-                            <span>Seg., 22 de ago. de 2024</span>
-                            <span id="data-consulta">11:30h</span>
-                        </div>
-                    </div>
-
-                    <div id="local-consulta" class="flex flex-col items-end">
-                        <span class="text-xl font-semibold">Hospital Ponta Negra</span>
-                        <span>Av. Ayrton Senna, 34 - Capim Macio</span>
-                    </div>
-
-                </div>
-            </div> -->
-
             <!-- Teste API: Box dados próxima consulta-->
             <div id="prox-consulta" style="width: 470px; border: solid; border-radius: 14px; border-color: #39D0CB;">
                 <div class="p-2 flex justify-between">
