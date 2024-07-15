@@ -15,92 +15,59 @@
             </div>
 
                 <!--box input texto nome-->
-                <div class="w-25 h-14 mb-2 flex flex-row items-center justify-items-stretch"
-                    style="background-color: #ecf3f1; border-radius: 25px;">
-                    <div class="p-2 italic text-slate-600">
-                        Nome
-                    </div>
+                <div class="w-25 h-14 mb-2 flex flex-row items-center justify-items-stretch" style="background-color: #ecf3f1; border-radius: 25px;">
+                    <div class="p-2 italic text-slate-600">Nome</div>
                     <div class="grow">
-                        <input class="form-control fw-lighter" id="nome" type="text" placeholder="Digite seu nome aqui"
-                            style="background-color: #ecf3f1; border-color: #ecf3f1;">
+                        <input v-model="nome" class="form-control fw-lighter" id="nome" type="text" placeholder="Digite seu nome aqui" style="background-color: #ecf3f1; border-color: #ecf3f1;">
                     </div>
                 </div>
 
                 <!--box input texto cpf-->
-                <div class="w-25 h-14 mb-2 flex flex-row items-center justify-items-stretch"
-                    style="background-color: #ecf3f1; border-radius: 25px;">
-                    <div class="p-2 italic text-slate-600">
-                        CPF
-                    </div>
+                <div class="w-25 h-14 mb-2 flex flex-row items-center justify-items-stretch" style="background-color: #ecf3f1; border-radius: 25px;">
+                    <div class="p-2 italic text-slate-600">CPF</div>
                     <div class="grow">
-                        <input class="form-control fw-lighter" id="cpf" type="text" placeholder="Digite seu cpf aqui"
-                            style="background-color: #ecf3f1; border-color: #ecf3f1;">
+                        <input v-model="cpf" class="form-control fw-lighter" id="cpf" type="text" placeholder="Digite seu cpf aqui" style="background-color: #ecf3f1; border-color: #ecf3f1;">
                     </div>
                 </div>
 
                 <!--box input texto email-->
-                <div class="w-25 h-14 mb-2 flex flex-row items-center justify-items-stretch"
-                    style="background-color: #ecf3f1; border-radius: 25px;">
-                    <div class="p-2 italic text-slate-600">
-                        E-mail
-                    </div>
+                <div class="w-25 h-14 mb-2 flex flex-row items-center justify-items-stretch" style="background-color: #ecf3f1; border-radius: 25px;">
+                    <div class="p-2 italic text-slate-600">E-mail</div>
                     <div class="grow">
-                        <input class="form-control fw-lighter" id="email" type="text" placeholder="Digite seu email aqui"
-                            style="background-color: #ecf3f1; border-color: #ecf3f1;">
+                        <input v-model="email" class="form-control fw-lighter" id="email" type="text" placeholder="Digite seu email aqui" style="background-color: #ecf3f1; border-color: #ecf3f1;">
                     </div>
                 </div>
 
                 <!--box input texto telefone-->
-                <div class="w-25 h-14 mb-2 flex flex-row items-center justify-items-stretch"
-                    style="background-color: #ecf3f1; border-radius: 25px;">
-                    <div class="p-2 italic text-slate-600">
-                        Telefone
-                    </div>
+                <div class="w-25 h-14 mb-2 flex flex-row items-center justify-items-stretch" style="background-color: #ecf3f1; border-radius: 25px;">
+                    <div class="p-2 italic text-slate-600">Telefone</div>
                     <div class="grow">
-                        <input class="form-control fw-lighter" id="telefone" type="text" placeholder="Digite neste formato: (99) 99999-9999"
-                            style="background-color: #ecf3f1; border-color: #ecf3f1;">
+                        <input v-model="telefone" class="form-control fw-lighter" id="telefone" type="text" placeholder="Digite neste formato: (99) 99999-9999" style="background-color: #ecf3f1; border-color: #ecf3f1;">
                     </div>
                 </div>
 
                 <!--box input texto endereço-->
-                <div class="w-25 h-14 mb-2 flex flex-row items-center justify-items-stretch"
-                    style="background-color: #ecf3f1; border-radius: 25px;">
-                    <div class="p-2 italic text-slate-600">
-                        Endereço
-                    </div>
+                <div class="w-25 h-14 mb-2 flex flex-row items-center justify-items-stretch" style="background-color: #ecf3f1; border-radius: 25px;">
+                    <div class="p-2 italic text-slate-600">Endereço</div>
                     <div class="grow">
-                        <input class="form-control fw-lighter" id="endereco" type="text" placeholder="Digite seu endereço completo aqui"
-                            style="background-color: #ecf3f1; border-color: #ecf3f1;">
+                        <input v-model="endereco" class="form-control fw-lighter" id="endereco" type="text" placeholder="Digite seu endereço completo aqui" style="background-color: #ecf3f1; border-color: #ecf3f1;">
                     </div>
                 </div>
-
-            <!--botão cadastrar
-            <nav class="my-8 flex items-center justify-center">
-                <a href="/login">
-                    <button id="btn-voltar" type="button" class="w-60 btn btn-primary btn-lg"
-                        style="background-color: #76BFAC; border: 4px solid #CFE3E1; border-radius: 14px;">
-                        Cadastrar
-                    </button>
-                </a>
-            </nav>
-            -->
-
-            <!--botão cadastrar
-            <nav class="my-8 flex items-center justify-center">
-                <button id="btn-cadastrar" class="btn">
-                    Cadastrar
-                </button>
-            </nav>
-            -->
-
-            <br>
+            
+            <!-- <br> -->
             <!--botão cadastrar-->
-            <nav>
+            <!-- <nav>
                 <a href="/login">
                     <button id="btn-cadastrar" onclick="" type="button" class="btn">
                         Cadastrar
                     </button>
                 </a>
+            </nav> -->
+
+            <!-- Botão cadastrar -->
+            <br>
+            <nav>
+                <button @click="cadastrar" type="button" class="btn">Cadastrar</button>
             </nav>
 
             <!-- Caixa de alerta personalizada -->
@@ -111,6 +78,34 @@
 </template>
 
 <script setup>
+import { ref } from 'vue';
+import { useFetch } from 'nuxt/app';
+
+const nome = ref('');
+const cpf = ref('');
+const email = ref('');
+const telefone = ref('');
+const endereco = ref('');
+
+const cadastrar = async () => {
+    const { data, error } = await useFetch('http://localhost:8080/paciente/inserir', {
+        method: 'POST',
+        body: {
+            nome: nome.value,
+            cpf: cpf.value,
+            email: email.value,
+            telefone: telefone.value,
+            endereco: endereco.value,
+        }
+    });
+
+    if (error.value) {
+        console.error('Erro ao cadastrar paciente:', error.value);
+    } else {
+        console.log('Paciente cadastrado com sucesso:', data.value);
+    }
+};
+
 import BotaoSair from '~/components/BotaoSair.vue';
 
     /**
