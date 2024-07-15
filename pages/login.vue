@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import BotaoHome from '~/components/BotaoHome.vue';
-</script>
-
 <template>
     <div class="w-full h-full">
 
@@ -21,26 +17,26 @@ import BotaoHome from '~/components/BotaoHome.vue';
                 </span>
             </div>
 
-            <!--box input texto usuário-->
+            <!-- box input texto usuário -->
             <div id="bxLoginUsuario" class="w-25 h-14 mb-4 flex flex-row items-center justify-items-stretch"
-                style="background-color: #ecf3f1; border-radius: 14px;">
-                <div class="p-2">
-                    <img src="assets\icon\icon _mail_.svg" alt="">
+                    style="background-color: #ecf3f1; border-radius: 14px;">
+                    <div class="p-2">
+                        <img src="assets/icon/icon_mail_.svg" alt="">
+                    </div>
+                    <div class="grow">
+                        <input class="form-control fw-lighter" v-model="username" type="text" placeholder="Digite seu usuário aqui"
+                            style="background-color: #ecf3f1; border-color: #ecf3f1;">
+                    </div>
                 </div>
-                <div class="grow">
-                    <input class="form-control fw-lighter" id="usuario" type="text" placeholder="Digite seu usuário aqui"
-                        style="background-color: #ecf3f1; border-color: #ecf3f1;">
-                </div>
-            </div>
                 
-            <!--box input texto senha-->
+            <!-- box input texto senha -->
             <div id="bxSenhaUsuario" class="w-25 h-14 mb-4 flex flex-row items-center justify-items-stretch"
                 style="background-color: #ecf3f1; border-radius: 14px;">
                 <div class="p-2">
-                    <img src="assets\icon\icon _lock_.svg" alt="">
+                    <img src="assets/icon/icon_lock_.svg" alt="">
                 </div>
                 <div class="grow">
-                    <input class="form-control fw-lighter" id="senha" type="password" placeholder="Digite sua senha aqui"
+                    <input class="form-control fw-lighter" v-model="password" type="password" placeholder="Digite sua senha aqui"
                         style="background-color: #ecf3f1; border-color: #ecf3f1;">
                 </div>
             </div>
@@ -53,14 +49,12 @@ import BotaoHome from '~/components/BotaoHome.vue';
                 </label>
             </div>
 
-            <!--botão entrar-->
+            <!-- botão entrar -->
             <nav class="mt-6 flex items-center justify-center">
-                <a href="/tipo-usuario">
-                    <button id="btn-entrar" onclick="" type="button" class="w-60 btn btn-primary btn-lg"
-                        style="background-color: #76BFAC; border: 4px solid #CFE3E1; border-radius: 14px;">
-                        Entrar
-                    </button>
-                </a>
+                <button @click="login" type="button" class="w-60 btn btn-primary btn-lg"
+                    style="background-color: #76BFAC; border: 4px solid #CFE3E1; border-radius: 14px;">
+                    Entrar
+                </button>
             </nav>
 
             <nav class="w-60 px-2 flex flex-row items-center justify-between text-sm italic font-extralight text-blue-400">
@@ -74,3 +68,32 @@ import BotaoHome from '~/components/BotaoHome.vue';
         </main>
     </div>
 </template>
+
+<script setup>
+import BotaoHome from '~/components/BotaoHome.vue';
+
+import { ref } from 'vue';
+import { useRouter } from 'vue-router';
+
+const username = ref('');
+const password = ref('');
+const router = useRouter();
+
+const login = async () => {
+  try {
+    const response = await $fetch('http://localhost:8080/login', {
+      method: 'POST',
+      body: { username: username.value, password: password.value }
+    });
+    
+    if (response.success) {
+      router.push('/tipo-usuario');
+    } else {
+      alert('Credenciais inválidas');
+    }
+  } catch (error) {
+    console.error('Erro ao fazer login:', error);
+    alert('Erro ao fazer login');
+  }
+};
+</script>
