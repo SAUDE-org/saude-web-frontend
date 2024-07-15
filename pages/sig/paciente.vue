@@ -68,27 +68,7 @@
                     </div>
 
                 </div>
-            </div>
-
-            <!-- Teste: Dados API-->
-            <!-- <div class="m-8">
-                <h3>Dados API CEP</h3>
-                <div v-if="pending">Carregando...</div>
-                <div v-else-if="error"> Erro: {{ error.message }}</div>
-                <pre v-else>{{ user_teste }}</pre>
-            </div> -->
-
-            <!-- Teste: Dados API-->
-            <div class="m-8">
-                <h3>Dados API CEP</h3>
-                <div v-if="pending">Carregando...</div>
-                <div v-else-if="error"> Erro: {{ error.message }}</div>
-                <div v-else>
-                    <div v-for="c in clientes" :key="c.id">
-                        <h3>  {{ c.nome }}</h3>
-                    </div>
-                </div>
-            </div>
+            </div>           
 
             <Titulo />
             <br>
@@ -122,33 +102,6 @@
 </template>
 
 <script setup>
-const {
-    data: clientes,
-    pending,
-    error,
-    refresh,
-    status
-} = await useFetch('https://reqres.in/api/users', {
-    transform: (response) => {
-		return response.data.map((p) => ({
-			id: p.id,
-            nome: p.first_name,
-            email: p.email,
-            foto: p.avatar
-		}))
-	},
-});
+
+
 </script>
-
-<!-- <script setup>
-const {
-    data: user,
-    pending,
-    error,
-    refresh,
-    status
-} = await useFetch('https://reqres.in/api/users/2', {
-});
-</script> -->
-
-
