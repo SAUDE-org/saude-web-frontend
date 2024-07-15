@@ -53,16 +53,6 @@
                         <input v-model="endereco" class="form-control fw-lighter" id="endereco" type="text" placeholder="Digite seu endereço completo aqui" style="background-color: #ecf3f1; border-color: #ecf3f1;">
                     </div>
                 </div>
-            
-            <!-- <br> -->
-            <!--botão cadastrar-->
-            <!-- <nav>
-                <a href="/login">
-                    <button id="btn-cadastrar" onclick="" type="button" class="btn">
-                        Cadastrar
-                    </button>
-                </a>
-            </nav> -->
 
             <!-- Botão cadastrar -->
             <br>
@@ -103,6 +93,13 @@ const cadastrar = async () => {
         alert('Erro ao cadastrar paciente: ' + error.value.message);
     } else {
         alert('Paciente cadastrado com sucesso!');
+
+        // Limpar os dados dos inputs
+        nome.value = '';
+        cpf.value = '';
+        email.value = '';
+        telefone.value = '';
+        endereco.value = '';
     }
 };
 
