@@ -50,6 +50,18 @@
                     </div>
                 </div>
 
+                <!--box input texto especialidade-->
+                <div class="w-25 h-14 mb-2 flex flex-row items-center justify-items-stretch"
+                    style="background-color: #ecf3f1; border-radius: 25px;">
+                    <div class="p-2 italic text-slate-600">
+                        Especialidade
+                    </div>
+                    <div class="grow">
+                        <input class="form-control fw-lighter" id="especialidade" type="text" placeholder="Digite sua especialidade profissional aqui"
+                            style="background-color: #ecf3f1; border-color: #ecf3f1;">
+                    </div>
+                </div>
+
                 <!--box input texto email-->
                 <div class="w-25 h-14 mb-2 flex flex-row items-center justify-items-stretch"
                     style="background-color: #ecf3f1; border-radius: 25px;">
