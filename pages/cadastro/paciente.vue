@@ -100,9 +100,9 @@ const cadastrar = async () => {
     });
 
     if (error.value) {
-        console.error('Erro ao cadastrar paciente:', error.value);
+        alert('Erro ao cadastrar paciente: ' + error.value.message);
     } else {
-        console.log('Paciente cadastrado com sucesso:', data.value);
+        alert('Paciente cadastrado com sucesso!');
     }
 };
 
