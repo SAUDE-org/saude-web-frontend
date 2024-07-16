@@ -58,7 +58,7 @@
             <br>
             <nav>
                 <button @click="cadastrar" type="button" class="btn">Cadastrar</button>
-            </nav>                
+            </nav>                         
 
             <!-- Caixa de alerta personalizada -->
             <div id="alertBox"></div>
@@ -69,44 +69,45 @@
 
 <script setup>
 import { ref } from 'vue';
-import { useFetch } from 'nuxt/app';
+import { useRouter } from 'vue-router';
 
 const nome = ref('');
 const cpf = ref('');
 const email = ref('');
 const telefone = ref('');
 const endereco = ref('');
+const router = useRouter();
 
 const cadastrar = async () => {
   try {
-    const { data, error } = await useFetch('http://localhost:8080/paciente/inserir', {
+    const response = await $fetch('http://localhost:8080/paciente/inserir', {
       method: 'POST',
-      body: {
+      body: JSON.stringify({
         nome: nome.value,
         cpf: cpf.value,
         email: email.value,
         telefone: telefone.value,
         endereco: endereco.value,
-      },
+      }),
       headers: {
         'Content-Type': 'application/json',
       },
     });
 
-    if (error) {
-      alert('Erro ao cadastrar paciente: ' + error.message);
-    } else {
+    if (response && response.success) {
       alert('Paciente cadastrado com sucesso!');
-
+      
       // Limpar os dados dos inputs
       nome.value = '';
       cpf.value = '';
       email.value = '';
       telefone.value = '';
       endereco.value = '';
+    } else {
+      alert('Erro ao cadastrar paciente: ' + (response.message || 'Desconhecido'));
     }
   } catch (error) {
-    console.error('Erro ao fazer login:', error);
+    console.error('Erro ao cadastrar paciente:', error);
     alert('Erro ao cadastrar paciente');
   }
 };

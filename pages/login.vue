@@ -19,26 +19,26 @@
 
             <!-- box input texto usuário -->
             <div id="bxLoginUsuario" class="w-25 h-14 mb-4 flex flex-row items-center justify-items-stretch"
-                    style="background-color: #ecf3f1; border-radius: 14px;">
-                    <div class="p-2">
-                        <img src="assets/icon/icon_mail_.svg" alt="">
-                    </div>
-                    <div class="grow">
-                        <input class="form-control fw-lighter" v-model="username" type="text" placeholder="Digite seu usuário aqui"
-                            style="background-color: #ecf3f1; border-color: #ecf3f1;">
-                    </div>
-                </div>
-                
+                style="background-color: #ecf3f1; border-radius: 14px;">
+            <div class="p-2">
+                <img src="assets/icon/icon_mail_.svg" alt="">
+            </div>
+            <div class="grow">
+                <input class="form-control fw-lighter" v-model="username" type="text" placeholder="Digite seu usuário aqui"
+                    style="background-color: #ecf3f1; border-color: #ecf3f1;">
+            </div>
+            </div>
+
             <!-- box input texto senha -->
             <div id="bxSenhaUsuario" class="w-25 h-14 mb-4 flex flex-row items-center justify-items-stretch"
                 style="background-color: #ecf3f1; border-radius: 14px;">
-                <div class="p-2">
-                    <img src="assets/icon/icon_lock_.svg" alt="">
-                </div>
-                <div class="grow">
-                    <input class="form-control fw-lighter" v-model="password" type="password" placeholder="Digite sua senha aqui"
-                        style="background-color: #ecf3f1; border-color: #ecf3f1;">
-                </div>
+            <div class="p-2">
+                <img src="assets/icon/icon_lock_.svg" alt="">
+            </div>
+            <div class="grow">
+                <input class="form-control fw-lighter" v-model="password" type="password" placeholder="Digite sua senha aqui"
+                    style="background-color: #ecf3f1; border-color: #ecf3f1;">
+            </div>
             </div>
 
             <!--box manter input conectado-->
@@ -50,11 +50,12 @@
             </div>
 
             <!-- botão entrar -->
+             <br>
             <nav class="mt-6 flex items-center justify-center">
-                <button @click="login" type="button" class="w-60 btn btn-primary btn-lg"
+            <button @click="login" type="button" class="w-60 btn btn-primary btn-lg"
                     style="background-color: #76BFAC; border: 4px solid #CFE3E1; border-radius: 14px;">
-                    Entrar
-                </button>
+                Entrar
+            </button>
             </nav>
 
             <nav class="w-60 px-2 flex flex-row items-center justify-between text-sm italic font-extralight text-blue-400">
@@ -70,8 +71,6 @@
 </template>
 
 <script setup>
-import BotaoHome from '~/components/BotaoHome.vue';
-
 import { ref } from 'vue';
 import { useRouter } from 'vue-router';
 
@@ -81,15 +80,26 @@ const router = useRouter();
 
 const login = async () => {
   try {
-    const response = await $fetch('http://localhost:8080/login', {
+    const response = await fetch('http://localhost:8080/login', {
       method: 'POST',
-      body: { username: username.value, password: password.value }
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        username: username.value,
+        password: password.value
+      })
     });
-    
-    if (response.success) {
-      router.push('/tipo-usuario');
+
+    if (response.ok) {
+      const data = await response.json();
+      if (data.success) {
+        router.push('/tipo-usuario');
+      } else {
+        alert('Credenciais inválidas');
+      }
     } else {
-      alert('Credenciais inválidas');
+      alert('Erro ao fazer login: ' + response.statusText);
     }
   } catch (error) {
     console.error('Erro ao fazer login:', error);
